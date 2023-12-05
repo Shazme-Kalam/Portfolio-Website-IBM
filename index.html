@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div id="home" class="profile_name">
+                <p class="name"> Shazme Kalam</p>
+                <p class="mail"> <i class="fas fa-envelope"></i> shazme@gmail.com</p>
+                <i class="fa fa-phone" aria-hidden="true"></i>+13456764598
+            </div>
+
+            <div class="topmenu">
+
+                <a href="">About Me</a>
+                <a href="">Skills</a>
+                <a href="">Projects</a>
+                <a href="">Recommendations</a>
+            </div>
+        </nav>
+        <div class="profile-container">
+            <img class="profile-image" src="images/girlimg.jpg" alt="logo">
+            <div class="profile-paragraph">
+                <span class="container">
+                    <h1><strong> Hi, I'm Shazme!</strong></h1>
+                    <img class="hi" src="images/download.png" alt="hello">
+                </span>
+                <p> I am a student of Coursera, now I am learning Introduction to HTML, CSS, JavaScript. I am the
+                    beginner of IT field. Recently I was joined the team and they allow me to take this course.
+                    It is very nice to me. I want to be a Full Stack Developer and provide Service as a Developer in
+                    companies like Google or Microsoft etc. I hope i will do my best and in this journey Coursera will
+                    always support me.
+                </p>
+            </div>
+        </div>
+        <span>
+            <h2><strong>Skills</strong></h2>
+        </span>
+        <div class="main-box">
+            <div class="box">
+                <img src="images/html.jpeg" alt="">
+                <p>HTML</p>
+                <p>Student</p>
+            </div>
+
+            <div class="box">
+                <img src="images/javascript.png" alt="">
+                <p>JavaScript</p>
+                <p>Student</p>
+            </div>
+
+            <div class="box">
+                <img src="images/java.jpeg" alt="">
+                <p>Java</p>
+                <p>never studies</p>
+            </div>
+
+            <div class="box">
+                <img src="images/react.jpeg" alt="">
+                <p>React</p>
+                <p>Student</p>
+            </div>
+
+            <div class="box">
+                <img src="images/node.jpeg" alt="">
+                <p>Node.Js</p>
+                <p>Student</p>
+            </div>
+            <div class="box">
+                <img src="images/download.jpeg" alt="">
+                <p>Css</p>
+                <p>Student</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="project-container">
+
+        <h2><strong>Projects</strong></h2>
+        <div>
+            <h3>Digital Clock</h3>
+            <ul>
+                <li>Developed a secure web App integrated with clock for an automobile client using HTML, CSS,
+                    JavaScript and IBM Watson Assistant</li>
+            </ul>
+            <hr />
+            <h3>ToDo App</h3>
+            <ul>
+                <li>Developed and deployed a ToDO App for the box reviews section of an user to remember daily task
+                    using IBM NLU </li>
+            </ul>
+            <hr />
+
+            <h3>Landing Page</h3>
+            <ul>
+                <li>Created a styled multi-page website for a new player in the homoeopathic industry and integrated it
+                    with
+                    advantages and properties of medicines and to learn and appointment details of many Doctors is
+                    available there</li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="recommendationContainer" class="recommendationContainer">
+        <h2><strong>Recommendations</strong></h2>
+        <div class="card-row">
+            <div class="card">
+                <p>Shazme is a very quick learner and quickly grasps key concepts of Web development. She got a great
+                    attitude & she is an excellent team player. She has a curious mind and asks the right question. She
+                    takes initiative within a team and has potentials to lead the team. </p>
+            </div>
+
+            <div class="card">
+                <p> Learning with Shazme has been an awesome experience. She is highly knowledgeable and always goes the
+                    extra step to make sure everything is right. For any future projects that need her expertise I would
+                    definitely want to work with her again. </p>
+            </div>
+
+            <div class="card">
+                <p> I had worked along with Shazme during the initial phase of our venture which needed Web development.
+                    She is a committed resource who has in depth knowledge about the domain. She will be an asset for
+                    any organisation! </p>
+            </div>
+        </div>
+        <ul id="recommendation_list">
+            <!-- <li></li> -->
+        </ul>
+        <!-- <textarea type="text" id="recommendation_input" placeholder="Enter your recommendation"> -->
+
+        </div>
+         <div class="message">
+            <h3 class="heading">Leave a Recommendation</h3>
+            <input type="text" id="nameInput" placeholder="Name (Optional)"> <br>
+            <textarea name="feedback" id="msg" cols="85" rows="10" placeholder="Message"></textarea>
+    </div>
+
+    <div class="submit"><button id="submitButton">Submit</button></div>
+
+    <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" class="home" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg></a>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="popup-body">
+                <img src="images/check-mark.svg" alt="check-icon" class="check-icon">
+                <p>Thanks for leaving a recommendation!</p>
+                <button id="okButton" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div> 
+
+<script src="app.js"></script>
+</body>
+
+</html>
